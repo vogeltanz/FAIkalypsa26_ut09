@@ -119,6 +119,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2914575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7802641422548057907, guid: 00c8cd5b17d50b043880dd51cb19a844, type: 3}
+  m_PrefabInstance: {fileID: 5670905989631489989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2914578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2914575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05071e931ff2ca84b85b2d65bf19d58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GhoulController
+  _speed: 1.5
 --- !u!1001 &3134632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12824,6 +12842,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7802641422538558819, guid: 00c8cd5b17d50b043880dd51cb19a844, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 41e3ed5f68aec0c469b9aab8c58821f6, type: 2}
     - target: {fileID: 7802641422548057907, guid: 00c8cd5b17d50b043880dd51cb19a844, type: 3}
       propertyPath: m_Name
       value: Ghoul@Animations
@@ -12871,7 +12893,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7802641422548057907, guid: 00c8cd5b17d50b043880dd51cb19a844, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2914578}
   m_SourcePrefab: {fileID: 100100000, guid: 00c8cd5b17d50b043880dd51cb19a844, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
