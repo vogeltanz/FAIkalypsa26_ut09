@@ -7,16 +7,25 @@ public class GroundDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        IsGrounded?.Invoke(true);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            IsGrounded?.Invoke(true);
+        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        IsGrounded?.Invoke(true);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            IsGrounded?.Invoke(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        IsGrounded?.Invoke(false);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            IsGrounded?.Invoke(false);
+        }
     }
 }
